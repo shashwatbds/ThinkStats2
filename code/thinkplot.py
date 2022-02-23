@@ -72,7 +72,7 @@ class _Brewer(object):
         """
         for i in cls.which_colors[num]:
             yield cls.colors[i]
-        raise StopIteration('Ran out of colors in _Brewer.')
+        #raise StopIteration('Ran out of colors in _Brewer.')
 
     @classmethod
     def InitIter(cls, num):
@@ -881,7 +881,7 @@ show = Show
 
 
 def main():
-    color_iter = _Brewer.ColorGenerator(7)
+    color_iter = _Brewer.ColorGenerator(4)
     for color in color_iter:
         print(color)
 
